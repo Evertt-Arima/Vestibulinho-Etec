@@ -15,33 +15,26 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="components/jquery-3.4.0.min.js"></script>
+  <!--<script src="components/scroll.js"></script>-->
+
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
 </head>
 <body>
   <div id="app">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
-    <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover theme-dark">
+    
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover theme-dark">
       <div class="view">
         <div class="page">
-          <div class="navbar">
+          <div class="navbar" id="menu">
             <div class="navbar-inner">
-              <div class="title">Left Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Left panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
+              <div class="title">Institucional</div>
             </div>
           </div>
           <div class="page-content">
@@ -56,15 +49,10 @@
       <!-- Page, data-name contains page name which can be used in callbacks -->
       <div class="page" data-name="home">
         <!-- Top Navbar -->
-        <div class="navbar">
+        <div class="navbar" id="navbar">
           <div class="navbar-inner">
-            <div class="left">
-              <a href="#" class="link icon-only panel-open" data-panel="left">
-                <i class="icon f7-icons ios-only">menu</i>
-                <i class="icon material-icons md-only">menu</i>
-              </a>
-            </div>
-            <div class="title sliding">My App</div>
+    
+            <div class="title sliding">Adolpho Berezin</div>
             <div class="right">
               <a href="#" class="link icon-only panel-open" data-panel="right">
                 <i class="icon f7-icons ios-only">menu</i>
@@ -74,7 +62,7 @@
           </div>
         </div>
         <!-- Toolbar-->
-        <div class="toolbar">
+        <div class="toolbar" id="toolbar">
           <div class="toolbar-inner">
             <a href="#" class="link">Left Link</a>
             <a href="#" class="link">Right Link</a>
@@ -110,7 +98,7 @@
           <div class="block block-strong">
             <div class="row">
               <div class="col-50">
-                <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
+                <a href="#" class="button button-raised button-fill popup-open" id="mapa" data-popup="#my-popup">Como chegar</a>
               </div>
               <div class="col-50">
                 <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
@@ -155,17 +143,17 @@
     <div class="popup" id="my-popup">
       <div class="view">
         <div class="page">
-          <div class="navbar">
+          <div class="navbar" id="navbar">
             <div class="navbar-inner">
-              <div class="title">Popup</div>
+              <div class="title">Localização</div>
               <div class="right">
-                <a href="#" class="link popup-close">Close</a>
+                <a href="#" class="link popup-close">Fechar</a>
               </div>
             </div>
           </div>
           <div class="page-content">
             <div class="block">
-              <p>Popup content goes here.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.4112943624923!2d-46.68087268501156!3d-24.12218998440749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce27e8f7751d31%3A0x6382eb95def97024!2sEtec+Adolpho+Berezin!5e0!3m2!1spt-BR!2sbr!4v1555636576448!5m2!1spt-BR!2sbr" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
