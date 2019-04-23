@@ -4,11 +4,14 @@
   background-color: firebrick;
 }
 #toolbar{
-  background-color: firebrick;
+  background-color: darkred;
   position: fixed;
-  transition: top 0.3s;
+  height: 6%;
 }
 #menu{
+  background-color: darkred;
+}
+#menu2{
   background-color: darkred;
 }
 #mapa{
@@ -21,4 +24,7 @@
 iframe{
   width: 100%;
   height: 400px;
+}
+#cursos{
+  background-color: firebrick;
 }
