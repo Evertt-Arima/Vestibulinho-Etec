@@ -31,7 +31,7 @@
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
     
-    <!-- Right panel with cover effect-->
+    <!--Menu Institucional-->
     <div class="panel panel-right panel-cover theme-dark">
       <div class="view">
         <div class="page">
@@ -41,13 +41,20 @@
             </div>
           </div>
           <div class="page-content">
-            <div class="block">Right panel content goes here</div>
+            <div class="block">
+
+              <a class="btn-muted btn-block popup-open mb-3" id="sobre" href="#" data-popup="#institucional">Sobre o Centro Paula Souza</a>
+
+              <a class="btn-muted btn-block popup-open mb-3" id="missao" href="#" data-popup="#institucional">Missão, Visão, Valores, Objetivos e Diretrizes</a>
+
+              <a class="btn-muted btn-block popup-open mb-3" id="contatos" href="#" data-popup="#institucional">Contatos</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Right panel with cover effect-->
+    <!--Menu de cursos-->
     <div class="panel panel-left panel-reveal theme-dark">
       <div class="view">
         <div class="page">
@@ -57,7 +64,18 @@
             </div>
           </div>
           <div class="page-content">
-            <div class="block">Right panel content goes here</div>
+            <div class="block">
+
+              <a class="btn-muted btn-block popup-open mb-3" id="en" href="#" data-popup="#curso">Enfermagem</a>
+
+              <a class="btn-muted btn-block mb-3" id="ds" href="#" data-toggle="modal" data-popup="#curso">Desenvolvimento de sistemas</a>
+
+              <a class="btn-muted btn-block popup-open mb-3" id="ed" href="#" data-popup="#curso">Edificações</a>
+
+              <a class="btn-muted btn-block popup-open mb-3" id="adm" href="#" data-popup="#curso">Administração</a>
+
+              <a class="btn-muted btn-block popup-open mb-3" id="bonus" href="#" data-popup="#curso">Turismo Receptivo</a>
+            </div>
           </div>
         </div>
       </div>
@@ -170,7 +188,7 @@
     </div>
 
     <!-- Popup Cursos -->
-    <div class="popup" id="my-popup">
+    <div class="popup" id="curso">
       <div class="view">
         <div class="page">
           <div class="navbar" id="navbar">
@@ -185,6 +203,31 @@
             <div class="block">
              <h3 class="mb-3" id="titulo"></h3>
              <p id="conteudo"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Institucional -->
+    <div class="popup" id="institucional">
+      <div class="view">
+        <div class="page">
+          <div class="navbar" id="navbar">
+            <div class="navbar-inner">
+              <div class="title" id="titulo2"></div>
+              <div class="right">
+                <a href="#" class="link popup-close">Fechar</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+             <h3 id="subtitulo"></h3>
+
+             <hr>
+
+             <p id="conteudo2"></p>
             </div>
           </div>
         </div>
