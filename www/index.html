@@ -1,231 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="theme-color" content="#2196f3">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <link rel="stylesheet" href="framework7/css/framework7.min.css">
-  <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <script src="components/jquery-3.4.0.min.js"></script>
-  <script src="components/popper.min.js"></script>
-  <script src="components/bootstrap.min.js"></script>  
-  <!--<script src="components/scroll.js"></script>-->
-
-  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
-
+    <title>MENU HORIZONTAL</title>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link rel="stylesheet" href="css/icons.css">
+ <link rel="stylesheet" href="css/app.css">
+ <link rel="stylesheet" href="components/loader.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/cursos.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
 </head>
+
 <body>
-  <div id="app">
-    <!-- Status bar overlay for fullscreen mode-->
-    <div class="statusbar"></div>
-    
-    <!--Menu Institucional-->
-    <div class="panel panel-right panel-cover theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar" id="menu">
-            <div class="navbar-inner">
-              <div class="title">Institucional</div>
+<nav class="links" id="header">
+      <label for="rd_secaoinst">Institucional</label><!-- para que cada vez que clicar na label já marcar na caixa opção -->
+      <label for="rd_secaocursos">Cursos</label>
+      <label for="rd_secaocalendario">Calendario</label>
+      <label for="rd_secaocps">Inscreva-se</label>
+
+</nav>
+
+<div class="scroll">
+ <input type="radio" name="grupo" id="rd_secaoinst" checked="true">
+ <input type="radio" name="grupo" id="rd_secaocursos">
+ <input type="radio" name="grupo" id="rd_secaocalendario">
+ <input type="radio" name="grupo" id="rd_secaocps">
+ <input type="radio" name="grupo" id="rd_secaoetecab">
+ <input type="radio" name="grupo" id="rd_secaoadm">
+ <input type="radio" name="grupo" id="rd_secaods">
+ <input type="radio" name="grupo" id="rd_secaoef">
+ <input type="radio" name="grupo" id="rd_secaotu">
+ <input type="radio" name="grupo" id="rd_secaoedf">
+ <input type="radio" name="grupo" id="rd_secaoms">
+ 
+
+<section class="sections">
+         <section class="bloco" id="secaoinst">
+           
+         </section>
+         <section class="bloco" id="secaocursos">
+           <div class="container" id="cursos">
+              <label id="adm" for="rd_secaoadm"  class="btn btn-danger btn-block" >Administração</label>
+
+              <label id="ads" for="rd_secaods" class="btn btn-danger btn-block"  > Desenvolvimento de Sistemas</label>
+
+              <label id="enf" for="rd_secaoef" class="btn btn-danger btn-block"  >Enfermagem</label>
+
+              <label id="tur" for="rd_secaotu" class="btn btn-danger btn-block"  >Bonus: Turismo</label>
+
+              <label id="ed" for="rd_secaoedf" class="btn btn-danger btn-block"   >Edificações</label>
+
+              <label id="man" for="rd_secaoms" class="btn btn-danger btn-block"  >Manutenção</label>
             </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
+         </section>
+         <section class="bloco" id="secaocalendario"></section>
+         <section class="bloco" id="secaocps"></section>
+         <section class="bloco" id="secaoetecab"></section>
+         <section class="bloco" id="secaoadm">
+            <div id="mbody">
+              <img id="admpronto" src="img/admpronto.jpg">
+                    <h3>Sobre Administração:</h3>                       
+                        <h6>   O Técnico em Administração é o profissional que controla a rotina administrativa das empresas.
+                            Colabora nos planejamentos estratégico, tático e operacional. Realiza atividades em recursos humanos e intermedeia mão-de-obra para colocação e para recolocação profissional.
+                            Atua na área de compras; auxilia no setor contábil e assessora a área de Vendas. Intercambia mercadorias e serviços e executa atividades nas áreas fiscal e financeira.
+                         </h6>
+                            <hr>
+                            <h4>Período: Noite - 40 vagas</h4>
+                            <hr>
+                            <p><h4>Grade dos módulos</h4></p>
+                            <a href="http://eteab.com.br/cms/wp-content/uploads/2018/07/Administracao.pdf">Matérias</a>
+                        </p>               
+                      </div>
+         </section>
+         <section class="bloco" id="secaods">                       
+           <div id="mbody"> 
+              <img id="admpronto" src="img/DESENVOLVIMETNODESISTEAMS.png">
+                 <h3>Desenvolvimento de Sistemas:</h3>                            
+                         <h6>
+                            O TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS é o profissional que analisa e projeta sistemas. Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos de dados.
+                          </h6>
+                            <hr>
+                              <h4>  Período: Tarde - 40 vagas </h2>
+                            <hr>
+                            <p><h4>Grade dos módulos</h2></p>
+                            <a href="http://eteab.com.br/cms/wp-content/uploads/2019/01/ds_1_19.pdf">Matérias</a>
+                        </p>               
 
-              <a class="btn-muted btn-block popup-open mb-3" id="sobre" href="#" data-popup="#institucional">Sobre o Centro Paula Souza</a>
+                      </div>
+         </section>
+         <section class="bloco" id="secaoef">
+           <div id="mbody"> 
+            <img id="admpronto" src="img/enfermagempronto.jpg">
+                        <h3>Sobre Enfermagem:</h3>
+                         <h6>
+                           O Técnico em Enfermagem é o profissional que, tendo o exercício regulamentado por lei, integra uma equipe e desenvolve, sob a supervisão de enfermeiro, ações de promoção, prevenção, recuperação e reabilitação referenciadas nas necessidades de saúde individuais e coletivas, determinadas pelos processos geradores de saúde e doença.
+                          </h6>
+                           <hr>
+                              <h4>  Período: Tarde - 40 vagas </h4>
+                            <hr>
+                            <p><h4>Grade dos módulos</h4></p>
+                            <a href="http://eteab.com.br/cms/wp-content/uploads/2019/01/enf_1_19.pdf">Matérias</a>
+                        </p>               
 
-              <a class="btn-muted btn-block popup-open mb-3" id="missao" href="#" data-popup="#institucional">Missão, Visão, Valores, Objetivos e Diretrizes</a>
+                      </div>
+         </section>
+         <section class="bloco" id="secaotu">
+           <div id="mbody"> 
+            <img id="admpronto" src="img/turismomo.png">
+                <h3>Sobre Turismo:</h3>
+                    <h6>
+                            O Técnico em Turismo Receptivo é o profissional que recebe / acolhe o turista em agências de turismo, meios de hospedagem, restaurantes e empresas organizadoras de eventos. Organiza roteiros históricos, culturais e educativos, assim como desenvolve atividades inerentes a arte da hospitalidade. Presta informações, assistência e orientação técnica ao turista.
 
-              <a class="btn-muted btn-block popup-open mb-3" id="contatos" href="#" data-popup="#institucional">Contatos</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                         </h6>
+                             <hr>
+                              <h4>  Período: Noite - 40 vagas </h4>
+                            <hr> 
 
-    <!--Menu de cursos-->
-    <div class="panel panel-left panel-reveal theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar" id="menu2">
-            <div class="navbar-inner">
-              <div class="title">Cursos</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
+                            <p><h4>Grade dos módulos</h4></p>
+                            <a href="http://eteab.com.br/cms/wp-content/uploads/2019/01/tur_1_19.pdf">Matérias</a>
+                        </p>               
 
-              <a class="btn-muted btn-block popup-open mb-3" id="en" href="#" data-popup="#curso">Enfermagem</a>
+                      </div>
+         </section>
+         <section class="bloco" id="secaoedf">
+           <div id="mbody"> 
+              <img id="admpronto" src="img/edificacoespronto.jpg">
+                 <h3>Sobre Edificações:</h3>                    
+                    <h6>
+                      O Técnico em Edificações é o profissional que executa atividades específicas da área de Construção Civil, tais como concepção de projetos, planejamento e orçamento de obras, supervisão da execução de diferentes etapas do processo construtivo, realização do controle tecnológico de materiais e do solo e levantamentos topográficos e planialtimétricos, com senso crítico e analítico, espírito de liderança, capacidade organizacional, visão sistêmica e consciência da responsabilidade social, inerente à sua profissão.
+                    </h6>
+                        <hr>
+                        <h4>  Período: Noite - 40 vagas </h4>
+                        <hr>
+                        <p><h4>Grade dos módulos</h4></p>
+                          <a href="http://eteab.com.br/cms/wp-content/uploads/2018/01/edf_1_18.pdf">Matérias</a>
+                        </p>               
 
-              <a class="btn-muted btn-block mb-3" id="ds" href="#" data-toggle="modal" data-popup="#curso">Desenvolvimento de sistemas</a>
+                      </div>           
+         </section>
+         <section class="bloco" id="secaoms">
+           <div id="mbody"> 
+                       <img id="admpronto" src="img/MANUTENCAO.png">
+                        <h3>Sobre Manutenção:</h3>
+                         <p>
+                         <h6>
+                          O Técnico em Manutenção e Suporte em Informática é o profissional que realiza manutenção preventiva e corretiva de equipamentos de informática, identificando os principais componentes de um computador e suas funcionalidades. Identifica as arquiteturas de rede e analisa meios físicos, dispositivos e padrões de comunicação. Avalia a necessidade de substituição ou mesmo atualização tecnológica dos componentes de redes. Instala, configura e desinstala programas básicos, utilitários e aplicativos.
+                         </h6>
+                          <hr>
+                              <h5>  Período: Noite - 40 vagas </h5>
+                            <hr>
+                            <p><h5>Grade dos módulos</h5></p>
+                            <a href="http://eteab.com.br/cms/wp-content/uploads/2018/01/ms_1_18.pdf">Matérias</a>
+                        </p>               
 
-              <a class="btn-muted btn-block popup-open mb-3" id="ed" href="#" data-popup="#curso">Edificações</a>
+                      </div>
+         </section>
 
-              <a class="btn-muted btn-block popup-open mb-3" id="adm" href="#" data-popup="#curso">Administração</a>
+</section>
 
-              <a class="btn-muted btn-block popup-open mb-3" id="bonus" href="#" data-popup="#curso">Turismo Receptivo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
 
-    <!-- Your main view, should have "view-main" class -->
-    <div class="view view-main ios-edges">
-      <!-- Page, data-name contains page name which can be used in callbacks -->
-      <div class="page" data-name="home">
-        <!-- Top Navbar -->
-        <div class="navbar" id="navbar">
-          <div class="navbar-inner">
-    
-            <div class="title sliding">Adolpho Berezin</div>
-            <div class="right">
-              <a href="#" class="link icon-only panel-open" data-panel="right">
-                <i class="icon f7-icons ios-only">menu</i>
-                <i class="icon material-icons md-only">menu</i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Toolbar-->
-        <div class="toolbar" id="toolbar">
-          <div class="toolbar-inner">
-
-            <a href="#" class="link"></a>
-            <a href="#" class="link panel-open" data-panel="left">Cursos</a>         
-          </div>
-        </div>
-        <!-- Scrollable page content-->
-        <div class="page-content">
-          <div class="block block-strong">
-            <h2>Calendário</h2>
-            <p>De 28/03 até as 15h do dia 09/04/2019 - Inscrições para redução da taxa do Vestibulinho e envio por meio digital, via upload, da documentação comprobatória, no site www.vestibulinhoetec.com.br</p>
-            <p>De 10/04 até as 15h do dia 15/05/2019 - Inscrições do Processo Seletivo no site www.vestibulinhoetec.com.br</p>
-            <p>A partir de 30/04/2019 - Divulgação no site www.vestibulinhoetec.com.br do resultado da solicitação de redução da taxa de inscrição</p>
-              De 30/04 até as 15h do dia 15/05/2019 - Inscrição para quem solicitou a redução da taxa de inscrição</p>
-             <p>11/06/2019 - Divulgação dos locais de Exame</p>
-              <p>16/06/2019, às 13h30min - Exame</p>
-              <p>16/06/2019 (domingo), a partir das 18h - Divulgação do gabarito oficial no site www.vestibulinhoetec.com.br</p>
-              <p>17/06/2019 (segunda-feira), a partir das 14h – Divulgação do gabarito oficial para acesso as vagas remanescentes no site www.vestibulinhoetec.com.br.</p>
-              <p>18/06/2019 (terça-feira), a partir das 14h – Divulgação do gabarito oficial dos Cursos de Especialização no site www.vestibulinhoetec.com.br.</p>
-              <p>05/07/2019 - Divulgação da lista de classificação geral para os cursos técnicos com prova de aptidão</p>
-              <p>16/07/2019 - Divulgação da lista de classificação geral dos demais cursos</p>
-              <p>17/07 e 18/07/2019 - Divulgação da 1ª lista de convocação e matrícula</p>
-              <p>19/07/2019 - Divulgação da 2ª lista de convocação</p>
-              <p>22/07 e 23/07/2019 - Matrícula da 2ª lista de convocação</p>
-          </div>
-          <div class="block block-strong">
-            <div class="row">
-              <div class="col-md-6">
-                <a href="#" class="button button-raised button-fill popup-open" id="mapa" data-popup="#my-popup">Como chegar</a>
-              </div>
-              <div class="col-md-6">
-                <a href="https://www.vestibulinhoetec.com.br/candidato/dados-acesso.asp" id="cursos" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Inscreva-se</a>
-              </div>
-            </div>
-          </div>
-          <div class="block block-strong">
-            <div class="row">
-              <div class="col-md-6">
-                <a href="http://eteab.com.br/cms/" class="button button-raised button-fill login-screen-open" id="cursos" data-popup="#my-popup">Site da Etec AB</a>
-              </div>
-              <div class="col-md-6">
-                <a href="https://pt-br.facebook.com/etecab/"  class="button button-raised button-fill login-screen-open" id="cursos" data-login-screen="#my-login-screen">Facebook</a>
-              </div>
-            </div>
-          </div>
-          
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Popup Localização -->
-    <div class="popup" id="my-popup">
-      <div class="view">
-        <div class="page">
-          <div class="navbar" id="navbar">
-            <div class="navbar-inner">
-              <div class="title">Localização</div>
-              <div class="right">
-                <a href="#" class="link popup-close">Fechar</a>
-              </div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.4112943624923!2d-46.68087268501156!3d-24.12218998440749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce27e8f7751d31%3A0x6382eb95def97024!2sEtec+Adolpho+Berezin!5e0!3m2!1spt-BR!2sbr!4v1555636576448!5m2!1spt-BR!2sbr" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Popup Cursos -->
-    <div class="popup" id="curso">
-      <div class="view">
-        <div class="page">
-          <div class="navbar" id="navbar">
-            <div class="navbar-inner">
-              <div class="title">Cursos</div>
-              <div class="right">
-                <a href="#" class="link popup-close">Fechar</a>
-              </div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
-             <h3 class="mb-3" id="titulo"></h3>
-             <p id="conteudo"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Popup Institucional -->
-    <div class="popup" id="institucional">
-      <div class="view">
-        <div class="page">
-          <div class="navbar" id="navbar">
-            <div class="navbar-inner">
-              <div class="title" id="titulo2"></div>
-              <div class="right">
-                <a href="#" class="link popup-close">Fechar</a>
-              </div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">
-             <h3 id="subtitulo"></h3>
-
-             <hr>
-
-             <p id="conteudo2"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- Framework7 library -->
-  <script src="framework7/js/framework7.min.js"></script>
-  <!-- Monaca JS library -->
-  <script src="components/loader.js"></script>
-  <!-- App routes -->
-  <script src="js/routes.js"></script>
-  <!-- Your custom app scripts -->
-  <script src="js/app.js"></script>
 </body>
 </html>
