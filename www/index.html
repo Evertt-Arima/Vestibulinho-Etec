@@ -17,7 +17,7 @@
       <label for="rd_secaoinst">Institucional</label><!-- para que cada vez que clicar na label já marcar na caixa opção -->
       <label for="rd_secaocursos">Cursos</label>
       <label for="rd_secaocalendario">Calendario</label>
-      <label for="rd_secaocps">Inscreva-se</label>
+      <label for="rd_secaolinks">Inscreva-se</label>
 
 </nav>
 
@@ -26,6 +26,7 @@
  <input type="radio" name="grupo" id="rd_secaocursos">
  <input type="radio" name="grupo" id="rd_secaocalendario">
  <input type="radio" name="grupo" id="rd_secaocps">
+ <input type="radio" name="grupo" id="rd_secaolinks">
  <input type="radio" name="grupo" id="rd_secaoetecab">
  <input type="radio" name="grupo" id="rd_secaoadm">
  <input type="radio" name="grupo" id="rd_secaods">
@@ -37,7 +38,10 @@
 
 <section class="sections">
          <section class="bloco" id="secaoinst">
-           
+           <div class="container">
+             <label id="cps" for="rd_secaocps" class="btn btn-danger btn-block">Centro Paula Souza</label>
+             <label id="cps" for="rd_secaoetecab" class="btn btn-danger btn-block">Adolpho Berezin</label>
+           </div>
          </section>
          <section class="bloco" id="secaocursos">
            <div class="container" id="cursos">
@@ -47,16 +51,58 @@
 
               <label id="enf" for="rd_secaoef" class="btn btn-danger btn-block"  >Enfermagem</label>
 
-              <label id="tur" for="rd_secaotu" class="btn btn-danger btn-block"  >Bonus: Turismo</label>
+              <label id="tur" for="rd_secaotu" class="btn btn-danger btn-block"  >Turismo Receptivo</label>
 
               <label id="ed" for="rd_secaoedf" class="btn btn-danger btn-block"   >Edificações</label>
 
               <label id="man" for="rd_secaoms" class="btn btn-danger btn-block"  >Manutenção</label>
             </div>
          </section>
-         <section class="bloco" id="secaocalendario"></section>
-         <section class="bloco" id="secaocps"></section>
-         <section class="bloco" id="secaoetecab"></section>
+         <section class="bloco" id="secaocalendario">
+           <div id="mbody">
+             <div class="content">
+              <h3>Calendario</h3>
+
+              <p>11/06/2019 - Divulgação dos locais de Exame
+  </p>
+              <p>16/06/2019, às 13h30min - Exae
+  </p>
+              <p>16/06/2019 (domingo), a partir das 18h - Divulgação do gabarito oficial no site www.vestibulinhoetec.com.br
+  </p>
+              <p>17/06/2019 (segunda-feira), a partir das 14h – Divulgação do gabarito oficial para acesso as vagas remanescentes no site www.vestibulinhoetec.com.br.
+  </p>
+              <p>17/06/2019 (segunda-feira), a partir das 14h – Divulgação do gabarito oficial para acesso as vagas remanescentes no site www.vestibulinhoetec.com.br.
+  </p>
+              <p>05/07/2019 - Divulgação da lista de classificação geral para os cursos técnicos com prova de aptidão
+  </p>
+              <p>16/07/2019 - Divulgação da lista de classificação geral dos demais cursos
+  </p>
+              <p>17/07 e 18/07/2019 - Divulgação da 1ª lista de convocação e matrícula
+  </p>
+          </div>
+           </div>
+         </section>
+         <section class="bloco" id="secaocps">
+           <div id="mbody">
+             <h3>Centro Paula Souza</h3>
+             <p>A instituição foi criada pelo decreto-lei de 6 de outubro de 1969, na gestão do governador Roberto Costa de Abreu Sodré (1967 – 1971), como resultado de um grupo de trabalho para avaliar a viabilidade de implantação gradativa de uma rede de cursos superiores de tecnologia com duração de dois e três anos.
+
+Em 1970, começou a operar com o nome de Centro Estadual de Educação Tecnológica de São Paulo (CEET), com três cursos na área de Construção Civil (Movimento de Terra e Pavimentação, Construção de Obras Hidráulicas e Construção de Edifícios) e dois na área de Mecânica (Desenhista Projetista e Oficinas). Era o início das Faculdades de Tecnologia do Estado. As duas primeiras foram instaladas nos municípios de Sorocaba e São Paulo.></p>
+           </div>
+
+         </section>
+         <section class="bloco" id="secaoetecab">
+           <div id="mbody">
+             <h3>Etec Adolpho Berezin</h3>
+             <p>A Escola Técnica inaugurada em 1995 na cidade de Mongaguá.
+Hoje atende com 6 cursos técnicos (Administração, Edificações, Enfermagem, Turismo Receptivo, Informática e Manutenção e Suporte em Informática) e o Ensino Médio.
+</p>
+<br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.4114336966973!2d-46.68087268482142!3d-24.1221850884267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce27e8f7751d31%3A0x6382eb95def97024!2sEtec+Adolpho+Berezin!5e0!3m2!1spt-BR!2sbr!4v1556734176141!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <br>
+          <a class="btn btn-primary btn-block" style="background-color: darkblue" href="https://pt-br.facebook.com/etecab/">Página do Facebook</a>
+           </div>
+         </section>
          <section class="bloco" id="secaoadm">
             <div id="mbody">
               <img id="admpronto" src="img/admpronto.jpg">
@@ -67,10 +113,7 @@
                          </h6>
                             <hr>
                             <h4>Período: Noite - 40 vagas</h4>
-                            <hr>
-                            <p><h4>Grade dos módulos</h4></p>
-                            <a href="http://eteab.com.br/cms/wp-content/uploads/2018/07/Administracao.pdf">Matérias</a>
-                        </p>               
+                            <hr>             
                       </div>
          </section>
          <section class="bloco" id="secaods">                       
@@ -82,10 +125,7 @@
                           </h6>
                             <hr>
                               <h4>  Período: Tarde - 40 vagas </h2>
-                            <hr>
-                            <p><h4>Grade dos módulos</h2></p>
-                            <a href="http://eteab.com.br/cms/wp-content/uploads/2019/01/ds_1_19.pdf">Matérias</a>
-                        </p>               
+                            <hr>            
 
                       </div>
          </section>
@@ -98,10 +138,7 @@
                           </h6>
                            <hr>
                               <h4>  Período: Tarde - 40 vagas </h4>
-                            <hr>
-                            <p><h4>Grade dos módulos</h4></p>
-                            <a href="http://eteab.com.br/cms/wp-content/uploads/2019/01/enf_1_19.pdf">Matérias</a>
-                        </p>               
+                            <hr>           
 
                       </div>
          </section>
@@ -116,10 +153,7 @@
                              <hr>
                               <h4>  Período: Noite - 40 vagas </h4>
                             <hr> 
-
-                            <p><h4>Grade dos módulos</h4></p>
-                            <a href="http://eteab.com.br/cms/wp-content/uploads/2019/01/tur_1_19.pdf">Matérias</a>
-                        </p>               
+            
 
                       </div>
          </section>
@@ -132,10 +166,7 @@
                     </h6>
                         <hr>
                         <h4>  Período: Noite - 40 vagas </h4>
-                        <hr>
-                        <p><h4>Grade dos módulos</h4></p>
-                          <a href="http://eteab.com.br/cms/wp-content/uploads/2018/01/edf_1_18.pdf">Matérias</a>
-                        </p>               
+                        <hr>              
 
                       </div>           
          </section>
@@ -150,13 +181,20 @@
                           <hr>
                               <h5>  Período: Noite - 40 vagas </h5>
                             <hr>
-                            <p><h5>Grade dos módulos</h5></p>
-                            <a href="http://eteab.com.br/cms/wp-content/uploads/2018/01/ms_1_18.pdf">Matérias</a>
-                        </p>               
+              
 
                       </div>
          </section>
-
+          <section class="bloco" id="secaolinks">
+            <div class="mbody">
+              <a class="btn btn-primary btn-block" href="https://www.vestibulinhoetec.com.br/candidato/dados-acesso.asp">Inscreva-se</a>
+              <br>
+              <a class="btn btn-primary btn-block" href="https://www.vestibulinhoetec.com.br/home/">Página do Vestibulinho</a>
+              <br>
+              <a class="btn btn-primary btn-block" href="https://www.vestibulinhoetec.com.br/documentos/">Edital</a>
+              <br>
+            </div>
+          </section>
 </section>
 
 </div>
